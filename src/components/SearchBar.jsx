@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-export const SearchBar = () => {
-  const [buscar, setBuscar] = useState('');
+export const SearchBar = ({ buscar, setBuscar }) => {
   const handleSearch = (e) => {
     setBuscar(e.target.value);
   };
